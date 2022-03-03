@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Anelis</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(73, 213, 248);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(189, 241, 250);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(207, 253, 255);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #48d8fcaf;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(107, 243, 253);
+            padding: 10px;
+            text-align: center;
+            color: rgb(7, 222, 250);
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>PASTELERÍA ANELIS</h2> </br>
+        <img src="C:\Users\Anny Rios\Documents\CursoLaunchX\FrontEnd\Semana2\Pastel.jpg"
+        alt="Pastel"width="600px"height="500px">
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/Anny%20Rios/Documents/CursoLaunchX/FrontEnd/Semana2/Sabores%20y%20Precios.html">Sabores/Tamaños/Precios</a></li>
+                <li><a href="file:///C:/Users/Anny%20Rios/Documents/CursoLaunchX/FrontEnd/Semana2/Decoraciones.html">Decoraciones</a></li>
+                <li><a href="file:///C:/Users/Anny%20Rios/Documents/CursoLaunchX/FrontEnd/Semana2/Pedido.html">Pedido</a></li>
+                <li><a href="file:///C:/Users/Anny%20Rios/Documents/CursoLaunchX/FrontEnd/Semana2/Pastelero.html">Pastelero</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>"NUNCA ES TARDE PARA UN PASTEL"</h1>
+            <img src="C:\Users\Anny Rios\Documents\CursoLaunchX\FrontEnd\Semana2\Cat.gif"
+            alt="Pastel"width="150px"height="140px">
+            <p>
+            ¡Ven y conoce nuestros deliciosos pasteles preparados con ingredientes naturales!
+            </p></br>
+        </article>
+    </section>
+
+    <footer>
+        <p>Dirección:Av Hidalgo 12, San Miguel, 55600 Zumpango de Ocampo, Méx. </br>
+        Telefono: 5951014127</br>
+        Horario de Atención: 9:00am-20:00 hrs Lunes-Sábado
+        </p>
+    </footer>
+
+</body>
+
+</html>
